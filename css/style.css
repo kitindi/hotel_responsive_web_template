@@ -169,9 +169,12 @@ section{
     font-size: 2.5em;
     font-family: var(--heading-font);
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 .about__us p{
     color: #828282;
+     margin-bottom: 1rem;
+     line-height: 1.5;
     
 }
 .about__us__content{
