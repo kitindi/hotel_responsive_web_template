@@ -227,6 +227,7 @@ section{
     height: 400px;
 }
 
+/* setting overlay */
 .stays__card::before{
     content: '';
     position: absolute;
@@ -239,6 +240,12 @@ section{
 }
 .stays__card:hover::before{
     opacity: 0;
+}
+.stays__card:hover .stays__card--name{
+    transform: translateX(calc(-100% - 1.5rem));
+}
+.stays__card:hover .stays__card--price{
+    transform: translateX(calc(-100% - 1.5rem));
 }
 .stays__card img{
     width: 100%;
@@ -256,9 +263,11 @@ section{
     font-weight: 700;
     font-size: 1.5em;
     margin-bottom: .5rem;
+    transition: transform 200ms ease-in-out;
 }
 .stays__card--price{
     font-weight: 500;
+     transition: transform 200ms ease-in-out 100ms;
 }
   
 @media(min-width:760px){
