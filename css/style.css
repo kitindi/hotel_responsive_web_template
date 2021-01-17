@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --primary-color:#fe5303;
+    --heading-font:'Playfair Display', serif;
+}
+
+*{
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    background-color: transparent; 
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+img{
+    width: 100%;
+    /* object-fit: cover; */
+}
+.container{
+    max-width: 1100px;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+/* HERO AREA */
+.hero__area{
+    color: #222;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../images/image-1.png);
+     color: white;
+
+}
+.hero__area header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.reservations{
+    background-color: var(--primary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: .5em;
+    font-weight: 500;
+}
+section{
+    padding: 4rem 0;
+}
+.reservations i{
+    margin-right: .5rem;
+}
+.main__heading{
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.adventure{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;    
+}
+.adventure i{
+    margin-left: .8rem;
+    padding: .5rem;
+    font-size: 2em;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.booking{
+    margin-top: 5rem;
+}
+.booking__inputs{
+    background-color: white;
+    color: #222;
+    padding: 1.2rem;
+    border-radius: .5rem;
+    display: grid;
+    gap: 1rem;
+}
+.booking__input label{
+    font-size: .75em;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+.booking__input input, .booking__input select{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: .5rem 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+.booking__button{
+    background-color: var(--primary-color);
+    padding: 1rem 1.2rem ;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    margin-top: .75rem;
+    /* box-shadow: ; */
+}
+
+@media(min-width:760px){
+    .booking__inputs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+
+    }
+    .booking__input{
+        padding: 0 1.2rem;
+        border-left: 1px solid #e0e0e0;
+    }
+    .booking__input:first-child{
+        border: none;
+        padding-left: 0;
+    }
+    .booking__input:last-child{
+        padding-right: 0;
+    }
+}
+@media(min-width:1000px){
+    .booking{
+        display: flex;
+        /* justify-content: center; */
+    }
+    .booking__button{
+        margin-top: 0;
+        margin-left: .5rem;
+    }
+}
+
+/* ABOUT US */
+
+.section__name{
+    text-transform: uppercase;
+    color: #bdbdbd;
+    font-weight: 500;
+    font-size: .75em;
+}
+.about__us h2{
+    font-size: 2.5em;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+.about__us p{
+    color: #828282;
+    
+}
+.about__us__content{
+    margin-top: 1.5rem;
+    display:grid;
+    gap:1.5rem;
+}
+.about__us__content img{
+    border-radius: .75rem;
+}
+
+@media(min-width:760px){
+    .about__us__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about__us__content--left, .about__us__content--right{
+        display: grid;
+        gap: 1rem;
+    }
+     .about__us__content--right img{
+         order: -1;
+     }
+}
