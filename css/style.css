@@ -359,3 +359,10 @@ footer{
     fill:var(--primary-color);
     transition:fill 300ms ease-in-out;
 }
+
+
+footer{
+    font-family: var(--heading-font);
+    color: #4f4f4f;
+    font-size: 1em;
+}
